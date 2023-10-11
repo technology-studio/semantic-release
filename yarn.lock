@@ -1674,6 +1674,13 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.0.tgz#591c1ce3a702c45ee15f47a42ade72c2fd78978a"
   integrity sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==
 
+"@types/signale@^1.4.5":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@types/signale/-/signale-1.4.5.tgz#2f90a159fc0657a39df9bc9c93d902cd8aac63c7"
+  integrity sha512-ewkOcex4cJH/4nPw9JIG6vQHDTZ5c0EORm1PZ3FHxHxaASQORYlQiG488LB8Vo/fpdTIfk99cbDYk5VFMXuECg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
