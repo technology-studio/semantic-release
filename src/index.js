@@ -5,9 +5,7 @@
  * @Copyright: Technology Studio
 **/
 
-import type { PluginSpec } from 'semantic-release'
-
-const plugins: PluginSpec[] = [
+const plugins = [
   ['@semantic-release/commit-analyzer', {
     present: 'conventionalcommits',
     releaseRules: [
