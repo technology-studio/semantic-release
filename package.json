@@ -15,10 +15,8 @@
   "license": "UNLICENSED",
   "private": false,
   "scripts": {
-    "compare-boilerplate-version": "./scripts/compare-boilerplate-version.sh",
     "noop": ":",
     "prepare": "husky install",
-    "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
     "semantic-release": "semantic-release",
     "test": "yarn noop"
   },
@@ -32,7 +30,6 @@
     "semantic-release-slack-bot": "^4.0.2"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "npm-check-updates": "^16.14.5"
+    "husky": "^8.0.3"
   }
 }
