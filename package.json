@@ -19,10 +19,8 @@
     "noop": ":",
     "prepare": "husky install",
     "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
-    "sanity": "yarn compare-boilerplate-version && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "yarn noop",
-    "update-boilerplate-version": "./scripts/update-boilerplate-version.sh"
+    "test": "yarn noop"
   },
   "engines": {
     "node": ">=18.0.0"
