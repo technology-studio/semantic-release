@@ -862,7 +862,7 @@
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^9.0.3"
 
-"@txo/commitlint@^1.0.7":
+"@txo/commitlint@^1.0.6":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@txo/commitlint/-/commitlint-1.0.7.tgz#257b96df1f563b0694e4c7bbce4a39abf516ee33"
   integrity sha512-kwmk5sgUCifljijIYUGnNhosrCyvsp4stlTlVrQEydgPNieADuVXf0+yhHgYqWaFJb2fMjgScLrK/XVc5JHbSg==
@@ -870,11 +870,6 @@
     "@commitlint/cli" "^18.4.2"
     "@commitlint/config-conventional" "^18.4.2"
     commitizen "^4.3.0"
-
-"@txo/tsconfig@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@txo/tsconfig/-/tsconfig-1.1.1.tgz#0e746a34c5a5092459235e15588fb33e94cbf067"
-  integrity sha512-YA8LdOoATb+LgwHlVFKxbR6i4xWkr1h6dGTqLh3HHGe25wYzJ7rixNNWucCXaY270Dmb33JQi5sDe6a1XtwRcg==
 
 "@types/mdast@^3.0.0":
   version "3.0.10"
