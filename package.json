@@ -12,7 +12,7 @@
     "email": "npm@technologystudio.sk",
     "url": "https://github.com/technology-studio/"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "noop": ":",
