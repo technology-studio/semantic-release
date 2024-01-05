@@ -1,6 +1,6 @@
 {
   "name": "@txo/semantic-release",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Technology Studio - Semantic release",
   "main": "src/index.js",
   "repository": {

@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/technology-studio/semantic-release/compare/v1.0.7...v1.0.8) (2024-01-05)
+
+
+### Bug fixes
+
+* update package.json ([#18](https://github.com/technology-studio/semantic-release/issues/18)) ([a788d87](https://github.com/technology-studio/semantic-release/commit/a788d8794c6e7d770f0b1965f9f274b455416727))
+
 ## [1.0.7](https://github.com/technology-studio/semantic-release/compare/v1.0.6...v1.0.7) (2023-12-12)
 
 
