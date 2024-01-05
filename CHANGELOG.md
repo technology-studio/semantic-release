@@ -1,3 +1,31 @@
+## [1.0.7](https://github.com/technology-studio/semantic-release/compare/v1.0.6...v1.0.7) (2023-12-12)
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^22.0.12 ([f347f5f](https://github.com/technology-studio/semantic-release/commit/f347f5f0e3956541c79587fe6ebecca8a9c2d39c))
+
+## [1.0.6](https://github.com/technology-studio/semantic-release/compare/v1.0.5...v1.0.6) (2023-12-12)
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^22.0.11 ([7ae1d8c](https://github.com/technology-studio/semantic-release/commit/7ae1d8ccc75f1cb6c2897b7a7611ba8a37f990bd))
+
+## [1.0.5](https://github.com/technology-studio/semantic-release/compare/v1.0.4...v1.0.5) (2023-12-06)
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^22.0.10 ([5e1c1c3](https://github.com/technology-studio/semantic-release/commit/5e1c1c32126717b2499f422cd8731ae779dec9de))
+
+## [1.0.4](https://github.com/technology-studio/semantic-release/compare/v1.0.3...v1.0.4) (2023-12-05)
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^22.0.9 ([c396c31](https://github.com/technology-studio/semantic-release/commit/c396c318ac5f6c9922b0ecdc9507080f1a63a585))
+
 ## [1.0.3](https://github.com/technology-studio/semantic-release/compare/v1.0.2...v1.0.3) (2023-11-17)
 
 
