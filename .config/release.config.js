@@ -6,6 +6,6 @@
 
 module.exports = {
   extends: [
-    './src/index.js',
+    '../src/index.js',
   ],
 }
