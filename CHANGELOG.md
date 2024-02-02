@@ -1,3 +1,19 @@
+## [2.0.0](https://github.com/technology-studio/semantic-release/compare/v1.0.8...v2.0.0) (2024-02-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** move the release config to `.config` folder to fix the breaking change
+
+* fix(deps): update dependency semantic-release to v23
+* chore: move release config to `.config` folder to fix breaking change
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to v23 ([#25](https://github.com/technology-studio/semantic-release/issues/25)) ([f25d8df](https://github.com/technology-studio/semantic-release/commit/f25d8df2ebe3df8ddf29ee794279f40141514958))
+* move and rename release config ([#30](https://github.com/technology-studio/semantic-release/issues/30)) ([e199c26](https://github.com/technology-studio/semantic-release/commit/e199c26ea260cbccb6b5215c669a65d31a5e3fd6))
+* update path for config ([#29](https://github.com/technology-studio/semantic-release/issues/29)) ([5b2423f](https://github.com/technology-studio/semantic-release/commit/5b2423f234754cf8e5a01c7cae72c430327e17cb))
+
 ## [1.0.8](https://github.com/technology-studio/semantic-release/compare/v1.0.7...v1.0.8) (2024-01-05)
 
 
