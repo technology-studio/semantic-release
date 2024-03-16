@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/technology-studio/semantic-release/compare/v2.0.3...v2.0.4) (2024-03-16)
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^23.0.4 ([1e88a35](https://github.com/technology-studio/semantic-release/commit/1e88a35f9fd23d756cacc805db1a87f7a31179b2))
+
 ## [2.0.3](https://github.com/technology-studio/semantic-release/compare/v2.0.2...v2.0.3) (2024-03-15)
 
 
