@@ -16,7 +16,7 @@
   "private": false,
   "scripts": {
     "noop": ":",
-    "prepare": "husky install",
+    "prepare": "husky",
     "semantic-release": "semantic-release",
     "test": "yarn noop"
   },
