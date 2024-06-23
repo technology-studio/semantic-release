@@ -7,7 +7,7 @@
 
 const plugins = [
   ['@semantic-release/commit-analyzer', {
-    present: 'conventionalcommits',
+    preset: 'conventionalcommits',
     releaseRules: [
       { breaking: true, release: 'major' },
       { revert: true, release: 'patch' },
