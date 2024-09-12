@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "@txo/commitlint": "^1.0.18",
-    "husky": "^9.1.5"
+    "husky": "^9.1.6"
   }
 }
