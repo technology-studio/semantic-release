@@ -1,0 +1,14 @@
+name: Release (dry run)
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  main:
+    name: '/'
+    uses: technology-studio/github-workflows/.github/workflows/_release.yml@main
+    with:
+      dry_run: true
+    secrets: inherit
