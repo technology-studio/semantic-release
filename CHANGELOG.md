@@ -1,3 +1,25 @@
+## [2.0.9](https://github.com/technology-studio/semantic-release/compare/v2.0.8...v2.0.9) (2024-11-18)
+
+
+### CI
+
+* add synchronize to PR workflow ([#68](https://github.com/technology-studio/semantic-release/issues/68)) ([9046a02](https://github.com/technology-studio/semantic-release/commit/9046a02a08e48ddc59fb49b90556d1d2a515febb))
+* update husky hooks ([#65](https://github.com/technology-studio/semantic-release/issues/65)) ([d6a12bc](https://github.com/technology-studio/semantic-release/commit/d6a12bc616fc6acd33b65976a9ebd964311febcc))
+* update pr and release workflows ([#63](https://github.com/technology-studio/semantic-release/issues/63)) ([7602145](https://github.com/technology-studio/semantic-release/commit/7602145ebad7fcd781bb2b2a04d5a3b2dc56a069))
+
+
+### Bug fixes
+
+* **deps:** update dependency semantic-release to ^23.1.1 ([7422048](https://github.com/technology-studio/semantic-release/commit/74220487aa40230088389f47027abcdb484e054f))
+* **deps:** update dependency semantic-release to ^24.1.0 ([95e33a3](https://github.com/technology-studio/semantic-release/commit/95e33a36b8363f10b309426059b1102d7a9b247b))
+* **deps:** update dependency semantic-release to ^24.1.1 ([7d93951](https://github.com/technology-studio/semantic-release/commit/7d939518955e8d3de41606db1f16e458f0a65868))
+* **deps:** update dependency semantic-release to ^24.1.2 ([ccdd5e4](https://github.com/technology-studio/semantic-release/commit/ccdd5e4130123cad399a3a1d061a46be680df146))
+* **deps:** update dependency semantic-release to ^24.1.3 ([804dcb6](https://github.com/technology-studio/semantic-release/commit/804dcb60694212df3020f832e4f9ad3a7e2880d7))
+* **deps:** update dependency semantic-release to ^24.2.0 ([42e61e3](https://github.com/technology-studio/semantic-release/commit/42e61e32371adc67e5799646eb845081a6297cf5))
+* **deps:** update dependency semantic-release to v24 ([#44](https://github.com/technology-studio/semantic-release/issues/44)) ([ddaa600](https://github.com/technology-studio/semantic-release/commit/ddaa60038814f92faf4b5ba17354f1c45aedb11e))
+* downgrade semantic-release and add dry run workflow ([#62](https://github.com/technology-studio/semantic-release/issues/62)) ([683016e](https://github.com/technology-studio/semantic-release/commit/683016e2023baf68ffbf649c95302c0156fdf8a4))
+* typo in `commit-analyzer` config ([#45](https://github.com/technology-studio/semantic-release/issues/45)) ([a594551](https://github.com/technology-studio/semantic-release/commit/a594551272fce4476498641a9c9994ab3d0d9fd8))
+
 ## [2.0.8](https://github.com/technology-studio/semantic-release/compare/v2.0.7...v2.0.8) (2024-04-10)
 
 
