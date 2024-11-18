@@ -10,5 +10,6 @@ module.exports = {
   ],
   branches: [
     process.env.BRANCH_NAME,
-  ]
+  ],
+  ci: false,
 }
