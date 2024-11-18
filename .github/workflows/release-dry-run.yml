@@ -6,9 +6,31 @@ on:
       - synchronize
 
 jobs:
-  main:
-    name: '/'
-    uses: technology-studio/github-workflows/.github/workflows/_release.yml@main
-    with:
-      dry_run: true
-    secrets: inherit
+  release-dry-run:
+    name: "Release (dry run)"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: technology-studio/github-workflows/.github/actions/github-app-token-generator@main
+        id: get-token
+        with:
+          app-id: ${{ secrets.TXO_GITHUB_BOT_APP_ID }}
+          private-key: ${{ secrets.TXO_GITHUB_BOT_APP_PRIVATE_KEY }}
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: technology-studio/github-workflows/.github/actions/install-dependencies@main
+        id: install
+      - run: yarn test --coverage
+      - uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238 # v4
+      - run: yarn semantic-release --dry-run --extends ./.releaserc.dryrun.js
+        env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
+      - name: Send a Slack message on failure
+        if: failure()
+        uses: technology-studio/github-workflows/.github/actions/slack-failed-job-message@main
+        with:
+          slack_bot_token: ${{ secrets.TXO_SLACK_BOT_APP_TOKEN }}
+          channel_id: ${{ secrets.TXO_SLACK_GITHUB_OPS_CHANNEL_ID }}
