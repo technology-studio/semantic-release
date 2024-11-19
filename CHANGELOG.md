@@ -1,3 +1,10 @@
+## [2.0.10](https://github.com/technology-studio/semantic-release/compare/v2.0.9...v2.0.10) (2024-11-19)
+
+
+### Bug fixes
+
+* add `conventional-changelog-conventionalcommits` ([#70](https://github.com/technology-studio/semantic-release/issues/70)) ([38116da](https://github.com/technology-studio/semantic-release/commit/38116da9d51197f10b6b870b16b7160ea64f781a))
+
 ## [2.0.9](https://github.com/technology-studio/semantic-release/compare/v2.0.8...v2.0.9) (2024-11-18)
 
 
