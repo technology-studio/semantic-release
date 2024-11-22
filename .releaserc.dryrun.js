@@ -11,4 +11,5 @@ module.exports = {
   branches: [
     process.env.PR_HEAD_REF,
   ],
+  dryRun: true,
 }
