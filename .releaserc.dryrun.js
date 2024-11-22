@@ -9,6 +9,6 @@ module.exports = {
     './src/index.js',
   ],
   branches: [
-    process.env.BRANCH_NAME,
+    process.env.PR_HEAD_REF,
   ],
 }

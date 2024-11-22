@@ -1,13 +1,16 @@
 name: Release (dry run)
 on:
-  pull_request_target:
+  pull_request:
     types:
       - opened
       - synchronize
 
+permissions:
+  contents: write
+
 jobs:
   release-dry-run:
-    name: "Release (dry run)"
+    name: 'Release (dry run)'
     runs-on: ubuntu-latest
     steps:
       - uses: technology-studio/github-workflows/.github/actions/github-app-token-generator@main
@@ -17,13 +20,13 @@ jobs:
           private-key: ${{ secrets.TXO_GITHUB_BOT_APP_PRIVATE_KEY }}
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
-          fetch-depth: 0
-          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.ref }}
       - uses: technology-studio/github-workflows/.github/actions/install-dependencies@main
-        id: install
       - run: yarn test --coverage
       - uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238 # v4
-      - run: yarn semantic-release --dry-run --extends ./.releaserc.dryrun.js --ci false
+      - run: |
+          echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
+      - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
         env:
           GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
