@@ -13,11 +13,6 @@ jobs:
     name: 'Release (dry run)'
     runs-on: ubuntu-latest
     steps:
-      - uses: technology-studio/github-workflows/.github/actions/github-app-token-generator@main
-        id: get-token
-        with:
-          app-id: ${{ secrets.TXO_GITHUB_BOT_APP_ID }}
-          private-key: ${{ secrets.TXO_GITHUB_BOT_APP_PRIVATE_KEY }}
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
@@ -28,7 +23,7 @@ jobs:
           echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
       - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
         env:
-          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+          GITHUB_TOKEN: ${{ github.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
       - name: Send a Slack message on failure
