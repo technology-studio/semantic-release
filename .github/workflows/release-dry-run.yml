@@ -24,7 +24,7 @@ jobs:
       - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.SEMANTIC_RELEASE_DRY_RUN_NPM_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
       - name: Send a Slack message on failure
         if: failure()
