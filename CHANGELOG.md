@@ -1,3 +1,15 @@
+## <small>2.0.11 (2026-03-15)</small>
+
+* fix(deps): update dependency semantic-release to v25 (#64) ([9ff2cab](https://github.com/technology-studio/semantic-release/commit/9ff2cab)), closes [#64](https://github.com/technology-studio/semantic-release/issues/64)
+* ci: add pr.yml permissions (#81) ([d192748](https://github.com/technology-studio/semantic-release/commit/d192748)), closes [#81](https://github.com/technology-studio/semantic-release/issues/81)
+* ci: update release dry run workflow (#67) ([bc17956](https://github.com/technology-studio/semantic-release/commit/bc17956)), closes [#67](https://github.com/technology-studio/semantic-release/issues/67)
+* ci: update release workflow permissions for id-token and contents ([83a46cd](https://github.com/technology-studio/semantic-release/commit/83a46cd))
+* chore(deps): update codecov/codecov-action action to v5 (#72) ([40e0647](https://github.com/technology-studio/semantic-release/commit/40e0647)), closes [#72](https://github.com/technology-studio/semantic-release/issues/72)
+* chore(deps): update dependency @txo/commitlint to ^1.0.21 (#73) ([893dd91](https://github.com/technology-studio/semantic-release/commit/893dd91)), closes [#73](https://github.com/technology-studio/semantic-release/issues/73)
+* chore(deps): update dependency @txo/commitlint to ^1.0.22 (#74) ([8e9340f](https://github.com/technology-studio/semantic-release/commit/8e9340f)), closes [#74](https://github.com/technology-studio/semantic-release/issues/74)
+* chore(deps): update dependency @txo/commitlint to ^1.0.23 (#75) ([80a406e](https://github.com/technology-studio/semantic-release/commit/80a406e)), closes [#75](https://github.com/technology-studio/semantic-release/issues/75)
+* chore(deps): update dependency @txo/commitlint to ^1.0.24 (#77) ([ed19867](https://github.com/technology-studio/semantic-release/commit/ed19867)), closes [#77](https://github.com/technology-studio/semantic-release/issues/77)
+
 ## [2.0.10](https://github.com/technology-studio/semantic-release/compare/v2.0.9...v2.0.10) (2024-11-19)
 
 
