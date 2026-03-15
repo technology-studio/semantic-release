@@ -22,9 +22,11 @@ jobs:
       - uses: codecov/codecov-action@0565863a31f2c772f9f0395002a31e3f06189574 # v5
       - run: |
           echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
-      - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
+      - run: yarn semantic-release --extends ./.releaserc.dryrun.js
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REF: refs/heads/${{ github.event.pull_request.head.ref }}
+          GITHUB_EVENT_NAME: push
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
       - name: Send a Slack message on failure
         if: failure()
