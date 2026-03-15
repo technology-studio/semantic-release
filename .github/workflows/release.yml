@@ -11,5 +11,5 @@ permissions:
 jobs:
   release:
     name: '/'
-    uses: technology-studio/github-workflows/.github/workflows/_release.yml@main
+    uses: technology-studio/github-workflows/.github/workflows/_release.yml@rsi/npm-oidc
     secrets: inherit
