@@ -31,7 +31,7 @@
     "semantic-release-slack-bot": "^4.0.2"
   },
   "devDependencies": {
-    "@txo/commitlint": "^1.1.0",
+    "@txo/commitlint": "^1.1.1",
     "husky": "^9.1.7"
   }
 }
