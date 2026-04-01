@@ -1,3 +1,9 @@
+## [2.0.13](https://github.com/technology-studio/semantic-release/compare/v2.0.12...v2.0.13) (2026-04-01)
+
+### Bug fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to ^9.2.0 ([#93](https://github.com/technology-studio/semantic-release/issues/93)) ([849d60a](https://github.com/technology-studio/semantic-release/commit/849d60a4c4dcd5f3ae79d1bc433ee6f0173b3de8))
+
 ## [2.0.12](https://github.com/technology-studio/semantic-release/compare/v2.0.11...v2.0.12) (2026-03-15)
 
 ### Bug fixes
