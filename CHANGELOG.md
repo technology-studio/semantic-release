@@ -1,3 +1,5 @@
+## [2.0.18](https://github.com/technology-studio/semantic-release/compare/v2.0.17...v2.0.18) (2026-07-27)
+
 ## [2.0.17](https://github.com/technology-studio/semantic-release/compare/v2.0.16...v2.0.17) (2026-07-10)
 
 ### Bug fixes
