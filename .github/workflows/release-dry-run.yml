@@ -18,7 +18,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
       - uses: technology-studio/github-workflows/.github/actions/install-dependencies@main
       - run: yarn test --coverage
-      - uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de # v5
+      - uses: codecov/codecov-action@0fb7174895f61a3b6b78fc075e0cd60383518dac # v5
       - run: |
           echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
       - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
