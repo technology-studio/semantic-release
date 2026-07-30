@@ -41,7 +41,10 @@ const plugins = [
     },
   ],
   '@semantic-release/npm',
-  '@semantic-release/github',
+  ['@semantic-release/github', {
+    successCommentCondition: false,
+    failCommentCondition: false,
+  }],
 ]
 
 module.exports = {
