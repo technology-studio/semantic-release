@@ -40,19 +40,9 @@ const plugins = [
       notifyOnFail: true,
     },
   ],
-  '@semantic-release/changelog',
   '@semantic-release/npm',
   '@semantic-release/github',
 ]
-
-if (process.env.GITHUB_REF_NAME === 'main') {
-  plugins.push([
-    '@semantic-release/git',
-    {
-      assets: ['CHANGELOG.md', 'package.json'],
-    },
-  ])
-}
 
 module.exports = {
   branches: [

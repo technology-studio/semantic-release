@@ -15,17 +15,17 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "noop": ":",
     "prepare": "husky",
     "semantic-release": "semantic-release",
-    "test": "yarn noop"
+    "test": "node test/index.test.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
+  "overrides": {
+    "micromatch": "^4.0.8"
+  },
   "dependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^10.2.0",
     "semantic-release": "^25.0.5",
     "semantic-release-slack-bot": "^4.0.2"
