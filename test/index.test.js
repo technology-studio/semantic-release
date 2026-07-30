@@ -31,6 +31,23 @@ assert.deepStrictEqual(pluginNames, [
   '@semantic-release/npm',
   '@semantic-release/github',
 ])
+const githubPlugin = config.plugins.find(
+  (plugin) => (Array.isArray(plugin) ? plugin[0] : plugin) === '@semantic-release/github',
+)
+
+assert.ok(
+  Array.isArray(githubPlugin),
+  '@semantic-release/github must be configured with options',
+)
+assert.strictEqual(
+  githubPlugin[1].successCommentCondition, false,
+  'github success comments must be disabled (no issues/pull-requests write permission)',
+)
+assert.strictEqual(
+  githubPlugin[1].failCommentCondition, false,
+  'github failure issues/comments must be disabled (no issues write permission)',
+)
+
 assert.deepStrictEqual(config.branches, [
   '+([0-9])?(.{+([0-9]),x}).x',
   'main',
