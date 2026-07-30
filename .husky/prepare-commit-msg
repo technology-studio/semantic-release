@@ -1,1 +1,1 @@
-yarn commitlint --edit || exec < /dev/tty && yarn txo-cz --hook > /dev/null 2>&1 || true
+bun run commitlint --edit || exec < /dev/tty && bun run txo-cz --hook > /dev/null 2>&1 || true

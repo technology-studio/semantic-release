@@ -16,12 +16,24 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.event.pull_request.head.ref }}
-      - uses: technology-studio/github-workflows/.github/actions/install-dependencies@main
-      - run: yarn test --coverage
-      - uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7
-      - run: |
-          echo "PR_HEAD_REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
-      - run: GITHUB_ACTIONS="" yarn semantic-release --extends ./.releaserc.dryrun.js
+      - uses: technology-studio/github-workflows/.github/actions/install-dependencies-bun@main
+      - run: bun run test --coverage
+      - name: Check if coverage was generated
+        id: check-coverage
+        run: |
+          if [[ -d "coverage" ]]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.check-coverage.outputs.exists == 'true'
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7
+      - name: Export PR head ref
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          echo "PR_HEAD_REF=$HEAD_REF" >> $GITHUB_ENV
+      - run: GITHUB_ACTIONS="" bun run semantic-release --extends ./.releaserc.dryrun.js
         env:
           GITHUB_TOKEN: ${{ github.token }}
           NPM_TOKEN: ${{ secrets.SEMANTIC_RELEASE_DRY_RUN_NPM_TOKEN }}

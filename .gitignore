@@ -11,3 +11,6 @@ npm-debug.log
 yarn-error.log
 lib
 coverage
+
+# local working files (never committed, never published)
+/.local/
