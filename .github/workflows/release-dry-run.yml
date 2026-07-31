@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.event.pull_request.head.ref }}
-      - uses: technology-studio/github-workflows/.github/actions/install-dependencies-bun@main
+      - uses: technology-studio/github-workflows/.github/actions/install-dependencies-bun@331e6f866da04053d27ba5890d1b9c60bc8ed2fa # main
       - run: bun run test --coverage
       - name: Check if coverage was generated
         id: check-coverage
@@ -40,7 +40,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
       - name: Send a Slack message on failure
         if: failure()
-        uses: technology-studio/github-workflows/.github/actions/slack-failed-job-message@main
+        uses: technology-studio/github-workflows/.github/actions/slack-failed-job-message@331e6f866da04053d27ba5890d1b9c60bc8ed2fa # main
         with:
           slack_bot_token: ${{ secrets.TXO_SLACK_BOT_APP_TOKEN }}
           channel_id: ${{ secrets.TXO_SLACK_GITHUB_OPS_CHANNEL_ID }}
