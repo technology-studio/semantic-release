@@ -5,7 +5,7 @@
     "": {
       "name": "@txo/semantic-release",
       "dependencies": {
-        "conventional-changelog-conventionalcommits": "^10.2.0",
+        "conventional-changelog-conventionalcommits": "^10.2.1",
         "semantic-release": "^25.0.5",
         "semantic-release-slack-bot": "^4.0.2",
       },
